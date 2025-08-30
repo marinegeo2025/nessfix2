@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NessFix2 – Ness FC Fixtures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #111;
+    }
+    header {
+      background: #008000;
+      color: #fff;
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .card {
+      margin: 30px auto;
+      max-width: 800px;
+      border: 2px solid #008000;
+      background: #fff;
+    }
+    .downloads {
+      margin-top: 20px;
+    }
+    .downloads a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 10px 15px;
+      background: #008000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .downloads a:hover {
+      background: #006600;
+    }
+  </style>
+</head>
+<body>
+  <header>NESS FC FIXTURES & LEAGUE TABLE</header>
+
+  <div class="card">
+    <!-- This always shows fresh data -->
+    <img src="/api/card.png" alt="Ness FC Fixtures Card" style="width:100%; height:auto;">
+  </div>
+
+  <div class="downloads">
+    <a href="/api/card.png" download="ness-fc-card.png">📥 Download PNG</a>
+    <a href="/api/card.svg" download="ness-fc-card.svg">📥 Download SVG</a>
+  </div>
+
+  <footer style="margin-top:40px; font-size:12px; color:#555;">
+    Data source: LHFA • Updated live each visit
+  </footer>
+</body>
+</html>
