@@ -1,14 +1,9 @@
 {
-  "name": "nessfix2",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vercel dev",
-    "start": "vercel dev"
-  },
-  "dependencies": {
-    "@sparticuz/chromium": "^123.0.1",
-    "@resvg/resvg-js": "^2.4.0",
-    "puppeteer-core": "^23.0.0"
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 60,
+      "memory": 1024
+    }
   }
 }
